@@ -7,6 +7,7 @@ Vmess_UUID="0c925f6b-e17e-4577-9f5f-37fe90fc0dc8"
 Vmess_Path="/s244"
 Share_Path="/share233"
 VER="latest"
+PORT=80
 
 if [ "$VER" = "latest" ]; then
   VER=`wget -qO- "https://api.github.com/repos/XTLS/Xray-core/releases/latest" | sed -n -r -e 's/.*"tag_name".+?"([vV0-9\.]+?)".*/\1/p'`
